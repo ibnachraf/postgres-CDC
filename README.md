@@ -1,5 +1,9 @@
 Simple CDC leveraging Debezium Engine to CDC.
 
+This App catch in real time changes in a postgres and process it, without any middleware.
+
+This is very useful for low latency data changes like > 1req/s.
+
 ## Motivation:
 * KafkaConnect and Debezium are very heavy to maintain.
 * Low-latency data migration from source to sink.
